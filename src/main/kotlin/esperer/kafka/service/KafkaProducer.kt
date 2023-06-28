@@ -17,6 +17,6 @@ class KafkaProducer(
 
     fun sendMessage(message: String){
         log.info("Produce Message: $message")
-        this.kafkaTemplate.send(TOPIC, message)
+        kafkaTemplate.send(TOPIC, message)
     }
 }
